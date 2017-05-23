@@ -1,0 +1,39 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        base(href="/")
+        title BookItIn
+        link(rel='stylesheet', type='text/css', href='/vendor/bootstrap/dist/css/bootstrap.min.css')
+        link(rel='stylesheet', type='text/css', href='/vendor/toastr/toastr.min.css')
+        link(rel='stylesheet', type='text/css', href='/vendor/components-font-awesome/css/font-awesome.min.css')
+        link(rel='stylesheet', type='text/css', href='/css/style.css')
+        link(rel="shortcut icon" href="/img/favicon.png")
+    body(ng-app='app')
+        nav.navbar.navbar-default
+            .container-fluid
+                .navbar-header
+                    button.navbar-toggle.collapsed(data-toggle="collapse",data-target="#navbar",aria-expanded="false",aria-controls="navbar")
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='#/') BookItIn
+
+                #navbar.navbar-collapse.collapse
+                    ul.nav.navbar-nav
+                        li: a(href="#/home") <i class="fa fa-home"></i> Home
+                        li: a(href="#/about") <i class="fa fa-building-o"></i> About
+                        li: a(href="#/contact") <i class="fa fa-envelope-o"></i> Contact
+
+        #main-section.container-fluid
+            .row-fluid
+                block main-content
+        footer.container-fluid
+            .col-md-12.text-center
+                a(href="https://amolwankhede.com",target="_blank")
+                    img#logo(src="/img/aw-footer.png" alt="AW Logo")
+                | 2017 Developed by
+                a#me(href="https://amolwankhede.com", target="_blank") Amol Wankhede
+        include scripts
