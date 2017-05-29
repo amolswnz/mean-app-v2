@@ -33,6 +33,11 @@
           controller: 'UserEditCtrl',
           controllerAs: 'editCtrl'
         })
+        .when('/user/add', {
+          templateUrl: '/partials/user/user-add',
+          controller: 'UserAddCtrl',
+          controllerAs: 'addCtrl'
+        })
         .when('/maintain', {
           templateUrl: '/partials/user/maintain',
           controller: 'MaintainCtrl'
