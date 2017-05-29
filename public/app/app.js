@@ -23,6 +23,11 @@
           controller: 'UserCtrl',
           controllerAs: 'users'
         })
+        .when('/user/add', {
+          templateUrl: '/partials/user/user-add',
+          controller: 'UserAddCtrl',
+          controllerAs: 'addCtrl'
+        })
         .when('/user/:id', {
           templateUrl: '/partials/user/user-profile',
           controller: 'SingleUserCtrl',
@@ -33,10 +38,10 @@
           controller: 'UserEditCtrl',
           controllerAs: 'editCtrl'
         })
-        .when('/user/add', {
-          templateUrl: '/partials/user/user-add',
-          controller: 'UserAddCtrl',
-          controllerAs: 'addCtrl'
+        .when('/user/:id/delete', {
+          templateUrl: '/partials/user/user-delete',
+          controller: 'UserDeleteCtrl',
+          controllerAs: 'deleteCtrl'
         })
         .when('/maintain', {
           templateUrl: '/partials/user/maintain',
