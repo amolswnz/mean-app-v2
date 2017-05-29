@@ -1,48 +1,12 @@
-# MEAN Application
-
-### Walking skeleton
-0. `npm init`
-0. `npm install express --save`
-0. Git Repo
-    * `git init`
-    * Create .gitignore file
-    * Add the directory names in this file that you want to ignore in commit (eg node_modules)
-    * `git add .`
-    * `git commit -m "Project Init"`
-0. Bower components
-    * Create .bowerrc file
-    * Add the directory name to specify the vendor files location
-    ```
-    {
-        "directory": "public/vendor"
-    }
-    ```
-    * `bower init`
-    * Install client side dependencies with bower
-        * bootstrap
-        * toastr
-        * angular
-        * angular-resource
-        * angular-route
-        * components-font-awesome
-    * `bower install bootstrap toastr angular angular-resource angular-route components-font-awesome --save`
-0. Create node application starting point index.js
-0. Add view engine `npm install pug --save` ([More info on pug  ](https://pugjs.org/language/attributes.html))
-0. Install dependencies
-    * stylus
-    * moragan
-    * body-parser
-    * `npm install stylus morgan body-parser --save`
-0. MongoDB
-    * `npm install mongoose --save`
-    * Connection path mongodb://`dbUser`:`dbPwd`@`dbhost`:`dbPort`/`dbName`
-0. Adding Stylus
-0. DONE
+# MEAN Application v2
 
 ### To use this MEAN Walking Skeleton
 Step 1] `npm install`<br>
-Step 2] `bower install`<br>
-Step 3] `nodemon`
+Step 2] Create .bowerrc file
+Step 3] Specify directory name to for the vendor files location in the .bowerrc file <br>
+  ```{ "directory": "public/vendor" } ```<br>
+Step 3] `bower install`<br>
+Step 4] `nodemon`
 
 
 # Credits
