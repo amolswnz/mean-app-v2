@@ -4,13 +4,13 @@ html
         meta(charset='utf-8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge')
         base(href="/")
-        title BookItIn
+        title MeanApp
         link(rel='stylesheet', type='text/css', href='/vendor/bootstrap/dist/css/bootstrap.min.css')
         link(rel='stylesheet', type='text/css', href='/vendor/toastr/toastr.min.css')
         link(rel='stylesheet', type='text/css', href='/vendor/components-font-awesome/css/font-awesome.min.css')
         link(rel='stylesheet', type='text/css', href='/css/style.css')
         link(rel="shortcut icon" href="/img/favicon.png")
-    body(ng-app='app')
+    body(ng-app='meanApp')
         nav.navbar.navbar-default
             .container-fluid
                 .navbar-header
@@ -19,13 +19,13 @@ html
                         span.icon-bar
                         span.icon-bar
                         span.icon-bar
-                    a.navbar-brand(href='#/') BookItIn
+                    a.navbar-brand(href='#/') MeanApp
 
                 #navbar.navbar-collapse.collapse
                     ul.nav.navbar-nav
                         li: a(href="#/home") <i class="fa fa-home"></i> Home
-                        li: a(href="#/about") <i class="fa fa-building-o"></i> About
-                        li: a(href="#/contact") <i class="fa fa-envelope-o"></i> Contact
+                        li: a(href="#/user") <i class="fa fa-user"></i> Users
+                        li: a(href="#/maintain") <i class="fa fa-cog"></i> User Maintenance
 
         #main-section.container-fluid
             .row-fluid

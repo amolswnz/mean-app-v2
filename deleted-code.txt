@@ -1,0 +1,11 @@
+Users page
+
+a(href='{{user._id}}')
+
+
+// console.log('text');
+// userService.getUser($routeParams.id).then(function(usr) {
+//   console.log('getUser', usr);
+//   vm.user = usr;
+// });
+//

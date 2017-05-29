@@ -1,0 +1,16 @@
+div
+  h3 View all Users
+  hr
+  table.table 
+    thead
+      tr
+        th Full Name
+        th Email 
+        th Status
+    tr(ng-repeat='user in users.allData')
+      //- td {{user}}
+      td 
+        a(href="#/user/{{user._id}}") {{ user.firstName }} {{ user.lastName }}
+      td {{ user.email }}
+      td {{ user.status }} 
+  

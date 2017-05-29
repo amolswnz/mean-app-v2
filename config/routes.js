@@ -1,6 +1,6 @@
 module.exports = function(app) {
     app.get('/', function(req, res) {
-        res.render('index', {nodeDynamicMsg: 'Hello from NodeJS dynamic message ' + new Date()});
+        res.render('index', {nodeDynamicMsg: 'Hello from NodeJS and ExpresJS Dynamic Message ' + new Date()});
     });
 
     var user = require('../modules/user/user.controller');
