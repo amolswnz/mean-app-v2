@@ -20,7 +20,7 @@
         })
         .when('/user', {
           templateUrl: '/partials/user/user-all',
-          controller: 'UserCtrl',
+          controller: 'AllUserCtrl',
           controllerAs: 'users'
         })
         .when('/user/add', {
@@ -42,10 +42,6 @@
           templateUrl: '/partials/user/user-delete',
           controller: 'UserProfileCtrl',
           controllerAs: 'deleteCtrl'
-        })
-        .when('/maintain', {
-          templateUrl: '/partials/user/maintain',
-          controller: 'MaintainCtrl'
         });
     });
 }());
