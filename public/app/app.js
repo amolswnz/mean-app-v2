@@ -19,7 +19,7 @@
           controller: 'HomeCtrl'
         })
         .when('/user', {
-          templateUrl: '/partials/user/users',
+          templateUrl: '/partials/user/user-all',
           controller: 'UserCtrl',
           controllerAs: 'users'
         })
@@ -30,17 +30,17 @@
         })
         .when('/user/:id', {
           templateUrl: '/partials/user/user-profile',
-          controller: 'SingleUserCtrl',
+          controller: 'UserProfileCtrl',
           controllerAs: 'profileCtrl'
         })
         .when('/user/:id/edit', {
           templateUrl: '/partials/user/user-edit',
-          controller: 'UserEditCtrl',
+          controller: 'UserProfileCtrl',
           controllerAs: 'editCtrl'
         })
         .when('/user/:id/delete', {
           templateUrl: '/partials/user/user-delete',
-          controller: 'UserDeleteCtrl',
+          controller: 'UserProfileCtrl',
           controllerAs: 'deleteCtrl'
         })
         .when('/maintain', {
