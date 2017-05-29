@@ -2,14 +2,14 @@
 
 ### To use this MEAN Walking Skeleton
 Step 1] `npm install`<br>
-Step 2] Create .bowerrc file
+Step 2] Create .bowerrc file<br>
 Step 3] Specify directory name to for the vendor files location in the .bowerrc file <br>
   ```{ "directory": "public/vendor" } ```<br>
 Step 3] `bower install`<br>
 Step 4] Create .gitignore file to ignore commits of the following folders<br>
 node_modules<br>
 public/vendor<br>
-Step 5] `nodemon`
+Step 5] `nodemon`<br>
 Step 6] Create something beautiful
 
 ### Walking skeleton contents
@@ -28,8 +28,6 @@ Step 6] Create something beautiful
 * body-parser
 * mongoose
 * pug
-
-##### Standard .gitignore file content
 
 # Credits
 [MongoDB](https://www.mongodb.com/) is an open source, document-oriented database designed with both scalability and developer agility in mind.
