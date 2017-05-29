@@ -12,10 +12,8 @@
     });
 
     vm.update = function() {
-      console.log('update' , vm.user);
       userService.updateUser($routeParams.id, vm.user).then(function(usr) {
-        console.log('data updated', vm.user);
-        toastr()
+        console.log('getUser', usr);
       });
     };
   }

@@ -6,11 +6,15 @@ div
       tr
         th Full Name
         th Email 
+        th Mobile
         th Status
     tr(ng-repeat='user in users.allData')
       //- td {{user}}
       td 
         a(href="#/user/{{user._id}}") {{ user.firstName }} {{ user.lastName }}
       td {{ user.email }}
+      td {{ user.mobile }}
       td {{ user.status }} 
   
+a(href='#/user/add' class='btn btn-primary') Add new
+p

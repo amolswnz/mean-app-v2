@@ -12,20 +12,20 @@
 
     function getUsers() {
       return $http.get('api/user').then(function(res) {
-          return res.data;
-        });
+        return res.data;
+      });
     }
 
     function getUser(id) {
       return $http.get('api/user/' + id).then(function(res) {
-          return res.data;
-        });
+        return res.data;
+      });
     }
 
     function updateUser(id, data) {
       return $http.put('api/user/' + id, data).then(function(res) {
-          return res.data;
-        });
+        return res.data;
+      });
     }
 
     // function getAllSchools() {
