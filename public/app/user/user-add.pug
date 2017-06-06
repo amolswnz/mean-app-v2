@@ -1,8 +1,13 @@
 h1 Add user 
-input(type='text',name='firstName',ng-model='addCtrl.user.firstName')
-input(type='text',name='lastName',ng-model='addCtrl.user.lastName')
-input(type='text',name='email',ng-model='addCtrl.user.email')
-input(type='text',name='password',ng-model='addCtrl.user.pwd')
-input(type='tel',name='mobile',ng-model='addCtrl.user.mobile')
+div(class='form-group')
+  input(class='form-control',type='text',name='firstName',ng-model='addCtrl.user.firstName',placeholder='firstName')
+div(class='form-group')
+  input(class='form-control',type='text',name='lastName',ng-model='addCtrl.user.lastName',placeholder='lastName')
+div(class='form-group')
+  input(class='form-control',type='text',name='email',ng-model='addCtrl.user.email',placeholder='email')
+div(class='form-group')
+  input(class='form-control',type='text',name='password',ng-model='addCtrl.user.pwd',placeholder='password')
+div(class='form-group')
+  input(class='form-control',type='tel',name='mobile',ng-model='addCtrl.user.mobile',placeholder='mobile')
 
-button(class='btn btn-info' ng-click='addCtrl.add()') Update
+button(class='btn btn-info' ng-click='addCtrl.add()') Add

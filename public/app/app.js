@@ -41,7 +41,7 @@
         .when('/user/:id/delete', {
           templateUrl: '/partials/user/user-delete',
           controller: 'UserProfileCtrl',
-          controllerAs: 'deleteCtrl'
+          controllerAs: 'vm'
         });
     });
 }());

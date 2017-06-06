@@ -8,13 +8,17 @@ div
         th Email 
         th Mobile
         th Status
+        th Action
     tr(ng-repeat='user in users.allData')
       //- td {{user}}
-      td 
-        a(href="#/user/{{user._id}}") {{ user.firstName }} {{ user.lastName }}
+      td {{ user.firstName }} {{ user.lastName }}
       td {{ user.email }}
       td {{ user.mobile }}
       td {{ user.status }} 
+      td 
+        a(href="#/user/{{user._id}}/edit",class='btn btn-primary') Edit 
+        | 
+        a(href="#/user/{{user._id}}/delete",class='btn btn-danger') Delete
   
 a(href='#/user/add' class='btn btn-primary') Add new
 p
